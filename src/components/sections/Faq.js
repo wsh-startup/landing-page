@@ -121,6 +121,34 @@ const FAQS = [
     content: () => <>We'll get back to you within 24 hours.</>,
   },
   {
+    title: "What happens when you don't find a match?",
+    content: () => (
+      <>
+        Transparency is how we build rapport with our partners. If we don't find
+        a match because all our developers are in the middle of a project,{' '}
+        <strong>we'll contact you so we can work out an arrangement</strong>.
+        <br />
+        <br />
+        Depending on our agreement, we can look for a developer to match your
+        needs. Or, partners will have the option to wait until a Tech Expert
+        becomes available.
+      </>
+    ),
+  },
+  {
+    title: "I'm a developer, how do I become a Tech Partner?",
+    content: () => (
+      <>
+        We're launching our Tech Partner page soon. For now, the Tech Partners
+        are within our professional network.
+        <br />
+        <br />
+        But since you persisted this far, contact us in any of the links below.
+        We love proactive, passionate, and determined developers!
+      </>
+    ),
+  },
+  {
     title: 'If I have questions, how do I reach you?',
     content: () => (
       <>
