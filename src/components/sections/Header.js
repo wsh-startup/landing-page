@@ -47,7 +47,9 @@ const Header = () => (
               >
                 <Button>
                   I'm looking for a Tech Expert to build my idea{' '}
-                  <span role="img">💡</span>
+                  <span role="img" aria-label="idea">
+                    💡
+                  </span>
                 </Button>
               </a>
             </Text>

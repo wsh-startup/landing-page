@@ -57,10 +57,10 @@ const UsedBy = () => (
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="our-partners" accent>
         <StyledContainer>
           <div>
-            <h1>Used by biggest in tech</h1>
+            <h1>Our tech expertise</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink key={link} href={link}>
