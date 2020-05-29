@@ -5,10 +5,6 @@ import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 
-/**
-Node
-*/
-
 const TEAM = [
   {
     name: 'HTML 5',
@@ -23,12 +19,16 @@ const TEAM = [
     image: 'icons/javascript.svg',
   },
   {
-    name: 'Node',
+    name: 'NodeJS',
     image: 'icons/nodejs.svg',
   },
   {
     name: 'PHP',
-    image: 'php.svg',
+    image: 'icons/php.svg',
+  },
+  {
+    name: 'Laravel',
+    image: 'icons/laravel.png',
   },
   {
     name: 'Java',
@@ -40,10 +40,10 @@ const TEAM = [
   },
   {
     name: 'Angular',
-    image: 'angular.png',
+    image: 'icons/angular.png',
   },
   {
-    name: 'Swift',
+    name: 'Swift/Objective-C',
     image: 'icons/swift.svg',
   },
   {
@@ -135,7 +135,7 @@ const TeamGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
   grid-template-rows: min-content;
-  grid-gap: 25px;
+  grid-gap: 35px;
   justify-content: space-between;
   width: 60%;
   margin-top: 72px;
