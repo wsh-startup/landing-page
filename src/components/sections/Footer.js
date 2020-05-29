@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
+// import PrivacyPolicy from '@pages/PrivacyPolicy';
+
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
@@ -77,11 +79,9 @@ const Footer = () => (
             </Copyright>
             <span>
               <p style={{ marginBottom: 10 }}>
-                <StyledExternalLink href="https://bit.ly/wesoarhighpartner">
-                  Privacy Policy
-                </StyledExternalLink>{' '}
+                <StyledExternalLink href="">Privacy Policy</StyledExternalLink>{' '}
                 |{' '}
-                <StyledExternalLink href="https://bit.ly/wesoarhighpartner">
+                <StyledExternalLink href="#wesoarhigh">
                   Terms of Service
                 </StyledExternalLink>
               </p>
@@ -166,7 +166,7 @@ const StyledExternalLink = styled(ExternalLink)`
   color: inherit;
   text-decoration: underline;
   &:hover {
-    color: ${props => props.theme.color.primaryDark};
+    color: ${props => props.theme.color.black.lighter};
   }
 `;
 
