@@ -44,11 +44,11 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="about">
+      <Section id="how-it-works">
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>Send a Request</h2>
               <p>
                 Gatsby.js builds the fastest possible website. Instead of
                 waiting to generate pages when requested, pre-build pages and

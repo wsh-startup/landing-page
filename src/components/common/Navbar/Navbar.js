@@ -6,7 +6,6 @@ import { Container } from '@components/global';
 import {
   Nav,
   NavItem,
-  Brand,
   StyledContainer,
   NavListWrapper,
   MobileMenu,
@@ -15,7 +14,7 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-const NAV_ITEMS = ['About', 'Brands', 'Team', 'FAQ'];
+const NAV_ITEMS = ['How It Works', 'Brands', 'Team', 'FAQ'];
 
 class Navbar extends Component {
   state = {
@@ -33,7 +32,13 @@ class Navbar extends Component {
   };
 
   getNavAnchorLink = item => (
-    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+    <AnchorLink
+      href={`#${item
+        .toLowerCase()
+        .split(' ')
+        .join('-')}`}
+      onClick={this.closeMobileMenu}
+    >
       {item}
     </AnchorLink>
   );
@@ -41,7 +46,12 @@ class Navbar extends Component {
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
       <Scrollspy
-        items={NAV_ITEMS.map(item => item.toLowerCase())}
+        items={NAV_ITEMS.map(item =>
+          item
+            .toLowerCase()
+            .split(' ')
+            .join('-')
+        )}
         currentClassName="active"
         mobile={mobile}
         offset={-64}
@@ -59,7 +69,11 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <Brand>WeSoarHigh</Brand>
+          <img
+            alt="WeSoarHigh"
+            src="logo/WSHlogoblackside.png"
+            style={{ height: 50 }}
+          />
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon />

@@ -4,16 +4,12 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_build: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
-        ) {
+        art_build: file(sourceInstanceName: { eq: "art" }, name: { eq: "08" }) {
           childImageSharp {
             fluid(maxWidth: 1400) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -31,17 +27,29 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                We help turn your ideas to reality by{' '}
-                <strong>focusing on what matters</strong>
+                We connect visionaries with skilled Tech Experts that understand
+                value
               </h1>
               <br />
               <p>
-                WeSoarHigh connects visionaries, founders with skilled
-                Technopreneurs that understand value
-                {/* <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
-                </StyledExternalLink> */}
+                Have a project or app in mind? <strong>Talk to us!</strong>
+                <br />
+                <strong>WeSoarHigh</strong> helps turn your ideas to reality by
+                focusing on what matters
               </p>
+              <br />
+              <br />
+              <a
+                href="https://bit.ly/wesoarhighpartner"
+                target="_blank"
+                style={{ color: '#111111', textDecoration: 'none' }}
+                rel="noreferrer"
+              >
+                <Button>
+                  I'm looking for a Tech Expert to build my idea{' '}
+                  <span role="img">💡</span>
+                </Button>
+              </a>
             </Text>
           </Grid>
         </Container>
@@ -49,6 +57,20 @@ const Header = () => (
     )}
   />
 );
+
+const Button = styled.div`
+  background-color: ${props => props.theme.color.tertiary};
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-right: 10px;
+  text-align: center;
+
+  :hover {
+    background-color: ${props => props.theme.color.tertiaryDark};
+    color: #eeeeee;
+  }
+`;
 
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
@@ -64,7 +86,7 @@ const Art = styled.figure`
   margin: 0;
 
   > div {
-    width: 120%;
+    width: 100%;
     margin-bottom: -4.5%;
 
     @media (max-width: ${props => props.theme.screen.md}) {
@@ -94,15 +116,6 @@ const Text = styled.div`
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: start;
-  }
-`;
-
-const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
-  text-decoration: none;
-
-  &:hover {
-    color: ${props => props.theme.color.black.regular};
   }
 `;
 

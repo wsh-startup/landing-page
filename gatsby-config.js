@@ -36,10 +36,10 @@ module.exports = {
         name: `WeSoarHigh`,
         short_name: `WeSoarHigh`,
         start_url: `/`,
-        background_color: `#8bd8ed`,
-        theme_color: `#8bd8ed`,
+        background_color: `#0D98EF`,
+        theme_color: `#0D98EF`,
         display: `minimal-ui`,
-        icon: `static/favicon.svg`,
+        icon: `static/favicon/favicon-96x96.png`,
       },
     },
     {
