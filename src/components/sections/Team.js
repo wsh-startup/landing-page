@@ -6,60 +6,69 @@ import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 
 /**
-C/C++
-Flutter
-Dart
-Android
-Objective-C
-Swift
 Node
-Firebase
 */
 
 const TEAM = [
   {
-    name: 'HTML',
-    image: 'html.svg',
+    name: 'HTML 5',
+    image: 'icons/html5.svg',
   },
   {
-    name: 'CSS',
-    image: 'css.svg',
+    name: 'CSS 3',
+    image: 'icons/css.svg',
   },
   {
     name: 'JavaScript',
-    image: 'javascript.svg',
+    image: 'icons/javascript.svg',
+  },
+  {
+    name: 'Node',
+    image: 'icons/nodejs.svg',
   },
   {
     name: 'PHP',
     image: 'php.svg',
   },
   {
-    name: 'SQL',
-    image: 'sql.svg',
-  },
-  {
     name: 'Java',
-    image: 'java.svg',
+    image: 'icons/java.svg',
   },
   {
     name: 'C#',
-    image: 'c-sharp.svg',
+    image: 'icons/c-sharp.svg',
   },
   {
     name: 'Angular',
-    image: 'angular.svg',
+    image: 'angular.png',
   },
   {
-    name: 'React',
-    image: 'javascript.svg',
+    name: 'Swift',
+    image: 'icons/swift.svg',
   },
   {
-    name: 'React Native',
-    image: 'react-native.svg',
+    name: 'Android',
+    image: 'icons/android.svg',
   },
   {
-    name: 'JavaScript',
-    image: 'javascript.svg',
+    name: 'Flutter/Dart',
+    image: 'icons/dart.png',
+  },
+  {
+    name: 'React/React Native',
+    image: 'icons/react.svg',
+  },
+  {
+    name: 'C/C++',
+    image: 'icons/c.svg',
+  },
+  {
+    name: 'Firebase',
+    image: 'icons/firebase.png',
+  },
+  {
+    name: 'SQL',
+    image: 'icons/sql.svg',
   },
 ];
 
@@ -97,13 +106,13 @@ const Team = () => (
           <h1>Skills and Technologies</h1>
           <TeamGrid>
             {TEAM.map(({ name, image }) => {
-              const img = data.allFile.edges.find(
-                ({ node }) => node.relativePath === image
-              ).node;
-
               return (
                 <div key={name}>
-                  <Img fluid={img.childImageSharp.fluid} alt={name} />
+                  <img
+                    src={image}
+                    alt={name}
+                    style={{ width: 75, height: 75 }}
+                  />
                   <Title>{name}</Title>
                   {/* <Subtitle>{role}</Subtitle> */}
                 </div>
@@ -126,7 +135,7 @@ const TeamGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
   grid-template-rows: min-content;
-  grid-gap: 50px;
+  grid-gap: 25px;
   justify-content: space-between;
   width: 60%;
   margin-top: 72px;
@@ -141,7 +150,7 @@ const TeamGrid = styled.div`
   }
 
   @media (max-width: ${props => props.theme.screen.xs}) {
-    grid-gap: 24px;
+    grid-gap: 25px;
   }
 `;
 
