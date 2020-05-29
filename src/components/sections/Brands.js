@@ -60,7 +60,7 @@ const UsedBy = () => (
       <Section id="our-partners" accent>
         <StyledContainer>
           <div>
-            <h1>Our tech expertise</h1>
+            <h1>Our Client Partners</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink key={link} href={link}>

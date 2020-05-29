@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
+import ExternalLink from '@common/ExternalLink';
 import { Section, Container } from '@components/global';
 
 const About = () => (
@@ -41,6 +43,17 @@ const About = () => (
             }
           }
         }
+
+        art_payment: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "13" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 760) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
       }
     `}
     render={data => (
@@ -48,12 +61,23 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Send a Request</h2>
+              <h2>
+                <span style={{ color: '#4834d4' }}>
+                  Step 1: <strong>Send a Request</strong>
+                </span>
+              </h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+                <strong>Provide details on your product or app idea.</strong>
+                <br />
+                At this stage, we gather relevant information that will help us
+                match you to Tech Experts.
+                <br />
+                <br />
+                Click{' '}
+                <StyledExternalLink href="bit.ly/wesoarhighpartner">
+                  here
+                </StyledExternalLink>{' '}
+                to send a request.
               </p>
             </div>
             <Art>
@@ -65,28 +89,72 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>
+                <span style={{ color: '#4834d4' }}>
+                  Step 2:{' '}
+                  <strong>Choose a Tech Expert from at most 3 matches</strong>
+                </span>
+              </h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+                <strong>
+                  We provide 3 matches to choose from, plus, our recommendations
+                  and insights
+                </strong>
+                . But, YOU have the final say!
+                <br />
+                <br />
+                WeSoarHigh matches the best Tech Experts that fit your goals,
+                requirements, and profile. We'll help you make an informed
+                choice and guide you through the process.
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2>
+                <span style={{ color: '#4834d4' }}>
+                  Step 3: <strong>Meet the Tech Expert</strong>
+                </span>
+              </h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
+                Have a virtual session with the Tech Expert of your choice,
+                facilitated by the WeSoarHigh team.
                 <br />
                 <br />
-                Gatsby is fast in every way that matters.
+                <strong>
+                  Iron out the details of the product and reach a common
+                  understanding.
+                </strong>{' '}
+                At this stage, we specify the product features, schedule,
+                milestones, delivery, and payment terms.
               </p>
             </div>
             <Art>
               <Img fluid={data.art_ideas.childImageSharp.fluid} />
             </Art>
+          </Grid>
+          <Grid inverse>
+            <Art>
+              <Img fluid={data.art_payment.childImageSharp.fluid} />
+            </Art>
+            <div>
+              <h2>
+                <span style={{ color: '#4834d4' }}>
+                  Step 4: <strong>Product Milestones and Payment</strong>
+                </span>
+              </h2>
+              <p>
+                <strong>Track progress</strong> through WeSoarHigh's
+                collaboration tools,{' '}
+                <strong>
+                  ensure software quality, and get incremental releases
+                </strong>{' '}
+                (milestones).
+                <br />
+                <br />
+                Provide incremental payments as agreed in the payment terms.
+              </p>
+            </div>
           </Grid>
         </Container>
       </Section>
@@ -137,6 +205,14 @@ const Art = styled.figure`
   margin: 0;
   max-width: 380px;
   width: 100%;
+`;
+
+const StyledExternalLink = styled(ExternalLink)`
+  color: inherit;
+  text-decoration: underline;
+  &:hover {
+    color: ${props => props.theme.color.primaryDark};
+  }
 `;
 
 export default About;

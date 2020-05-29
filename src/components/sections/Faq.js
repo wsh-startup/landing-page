@@ -1,23 +1,73 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import { Section, Container } from '@components/global';
-
 import FaqItem from '@common/FaqItem';
 import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
     title: 'What is WeSoarHigh?',
-    content: () => <></>,
+    content: () => (
+      <>
+        WeSoarHigh is a young Filipino startup that connects people with product
+        or app ideas (partners) with curated, skilled developers / freelancers
+        (Tech Experts).
+        <br />
+        <br />
+        We believe everyone who has the courage to pursue the ideas deserve the
+        best people to work on them.
+        <br />
+        Because of this, <strong>we will reach greater heights together</strong>
+        !
+      </>
+    ),
   },
   {
     title: 'How does it work?',
     content: () => (
       <>
-        Gatsby’s rich data plugin ecosystem lets you build sites with the data
-        you want — from one or many sources: Pull data from headless CMSs, SaaS
-        services, APIs, databases, your file system, and more directly into your
-        pages using GraphQL.
+        We want you to build your product as soon and as fast as possible. So
+        here's our seamless process for <strong>Partners</strong>.
+        <br />
+        <br />
+        1️⃣ <strong>Send a request</strong> and provide project details
+        <br />
+        2️⃣ <strong>WeSoarHigh recommends 3 of our Tech Experts</strong> that
+        best fit your needs, give insights and recommendations
+        <br />
+        3️⃣ Evaluate and select 1 Tech Expert you like best.{' '}
+        <strong>You have the final say!</strong>
+        <br />
+        4️⃣ <strong>
+          Virtual Session with Tech Expert + WeSoarHigh team
+        </strong>{' '}
+        to iron out details, set milestones, specify payment terms, outline
+        features, etc.
+        <br />
+        5️⃣ <span style={{ color: 'darkred' }}>*</span>Provide incremental
+        payments (₱)
+        <br />
+        6️⃣ <span style={{ color: 'darkred' }}>*</span>Receive incremental
+        releases (weekly or bi-monthly), weekly progress updates and conduct
+        weekly meetings
+        <br />
+        7️⃣ <span style={{ color: 'darkred' }}>*</span>Receive the FINAL PRODUCT
+        📱💻 + Training + Support
+        <br />
+        <em>
+          <small>
+            <span style={{ color: 'darkred' }}>*</span>Will be sorted out and
+            finalized on or before Step 4️⃣
+          </small>
+        </em>
+        <br />
+        <br />
+        For more info, here's our{' '}
+        <StyledExternalLink href="https://bit.ly/wshpartnerfaq">
+          FAQ for Interested Partners
+        </StyledExternalLink>
+        . .
       </>
     ),
   },
@@ -25,10 +75,24 @@ const FAQS = [
     title: 'Who are your Tech Experts?',
     content: () => (
       <>
-        Gatsby.js is Internet Scale. Forget complicated deploys with databases
-        and servers and their expensive, time-consuming setup costs,
-        maintenance, and scaling fears. Gatsby.js builds your site as “static”
-        files which can be deployed easily on dozens of services.
+        Our Tech Experts possess the following qualities:
+        <ul>
+          <li>
+            Competent in Mobile Application, Web Application, and/or Desktop
+            Application Development
+          </li>
+          <li>
+            Developers who are in the startup scene or familiar with startup
+            culture
+          </li>
+          <li>
+            Tech-savvy developers that are up-to-date with the latest
+            Technologies worldwide
+          </li>
+          <li>Motivated learners that possess a growth mindset</li>
+        </ul>
+        <strong>We value quality over quantity.</strong> We assess developers
+        based on their Technical competencies, not on the years of experience.
       </>
     ),
   },
@@ -36,21 +100,65 @@ const FAQS = [
     title: 'How do you match Partners and Tech Experts?',
     content: () => (
       <>
-        Do not build a website with last decade’s tech. The future of the web is
-        mobile, JavaScript and APIs—the{` `}
-        <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
-        Every website is a web app and every web app is a website. Gatsby.js is
-        the universal JavaScript framework you’ve been waiting for.
+        We developed an algorithm that evaluates the compatibility of our
+        Partners with each of our Tech Expert.
+        <ol>
+          <li>Assess the business and Tech requirements of our partners</li>
+          <li>
+            Assess the Technical expertise of our Tech Partners based on their
+            profiles, interviews, portfolio, etc.
+          </li>
+          <li>
+            Recommended Tech Partners will send proposals, which will be
+            forwarded to our partners
+          </li>
+        </ol>
       </>
     ),
   },
   {
     title: 'How fast do I get a Tech Expert?',
-    content: () => <></>,
+    content: () => <>We'll get back to you within 24 hours.</>,
   },
   {
     title: 'If I have questions, how do I reach you?',
-    content: () => <></>,
+    content: () => (
+      <>
+        <strong>
+          You can talk to us via the chatbox on the lower-right of this site
+        </strong>
+        . We'll get the message even when offline.
+        <br />
+        <br />
+        Other Channels:
+        <ul>
+          <li>
+            Email:{' '}
+            <StyledExternalLink href="mailto:hello@wesoarhigh.com">
+              hello@wesoarhigh.com
+            </StyledExternalLink>
+          </li>
+          <li>
+            Twitter:{' '}
+            <StyledExternalLink href="https://twitter.com/wesoarhighph">
+              @wesoarhighph
+            </StyledExternalLink>
+          </li>
+          <li>
+            Facebook:{' '}
+            <StyledExternalLink href="https://facebook.com/wesoarhighph">
+              @WeSoarHighPH
+            </StyledExternalLink>
+          </li>
+          <li>
+            Messenger:{' '}
+            <StyledExternalLink href="https://m.me/wesoarhighph">
+              Talk to us!
+            </StyledExternalLink>
+          </li>
+        </ul>
+      </>
+    ),
   },
 ];
 
@@ -68,5 +176,13 @@ const Faq = () => (
     </Container>
   </Section>
 );
+
+const StyledExternalLink = styled(ExternalLink)`
+  color: inherit;
+  text-decoration: underline;
+  &:hover {
+    color: ${props => props.theme.color.primaryDark};
+  }
+`;
 
 export default Faq;
