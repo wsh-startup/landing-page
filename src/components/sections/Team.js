@@ -7,20 +7,20 @@ import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
-    name: 'Arjay Osma',
+    name: 'Web Application',
     image: 'josh.jpg',
     role: 'Co-Founder',
   },
   {
-    name: 'Mina Opada',
+    name: 'Mobile Application',
     image: 'lisa.jpg',
     role: 'Co-Founder',
   },
-  // {
-  //   name: 'Ashlyn Harris',
-  //   image: 'ashlyn.jpg',
-  //   role: 'Frontend Engineer',
-  // },
+  {
+    name: 'Desktop Application',
+    image: 'ashlyn.jpg',
+    role: 'Frontend Engineer',
+  },
   // {
   //   name: 'Todd Joseph',
   //   image: 'todd.jpg',
@@ -67,7 +67,7 @@ const Team = () => (
       }
     `}
     render={data => (
-      <Section id="team" accent="secondary">
+      <Section id="technologies" accent="secondary">
         <Container style={{ position: 'relative' }}>
           <h1>The Team</h1>
           <TeamGrid>

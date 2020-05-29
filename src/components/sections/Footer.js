@@ -49,40 +49,45 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>
-                <img
-                  alt="WeSoarHigh"
-                  src="logo/WSHblacktext.png"
-                  style={{ height: 50 }}
-                />
-              </h2>
-              <small>
-                <span>
-                  Illustrations by
-                  {` `}
-                  <ExternalLink href="https://twitter.com/diana_valeanu">
-                    @diana_valeanu
+              <img
+                alt="WeSoarHigh"
+                src="logo/WSHblacktext.png"
+                style={{ height: 50 }}
+              />
+              <SocialIcons>
+                {SOCIAL.map(({ alt, icon, link }) => (
+                  <ExternalLink key={link} href={link}>
+                    <img src={icon} alt={alt} />
                   </ExternalLink>
-                </span>
-                {` | `}
-                <span>
-                  Icons made by{' '}
-                  <a
-                    href="https://www.flaticon.com/authors/freepik"
-                    title="Freepik"
-                  >
-                    Freepik
-                  </a>
-                </span>
-              </small>
+                ))}
+              </SocialIcons>
             </Copyright>
-            <SocialIcons>
-              {SOCIAL.map(({ alt, icon, link }) => (
-                <ExternalLink key={link} href={link}>
-                  <img src={icon} alt={alt} />
+            <span>
+              <p style={{ marginBottom: 10 }}>
+                Privacy Policy | Terms of Service
+              </p>
+              <span>
+                Illustrations by
+                {` `}
+                <ExternalLink
+                  href="https://twitter.com/diana_valeanu"
+                  style={{ textDecoration: 'none', color: '#111111' }}
+                >
+                  @diana_valeanu
                 </ExternalLink>
-              ))}
-            </SocialIcons>
+              </span>
+              {` | `}
+              <span>
+                Icons made by{' '}
+                <a
+                  href="https://www.flaticon.com/authors/freepik"
+                  style={{ textDecoration: 'none', color: '#111111' }}
+                  title="Freepik"
+                >
+                  Freepik
+                </a>
+              </span>
+            </span>
           </StyledContainer>
         </FooterWrapper>
       </React.Fragment>
