@@ -7,17 +7,11 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
-    title: 'What tech does Gatsby use?',
-    content: () => (
-      <>
-        Enjoy the power of the latest web technologies – React.js , Webpack ,
-        modern JavaScript and CSS and more — all set up and waiting for you to
-        start building
-      </>
-    ),
+    title: 'What is WeSoarHigh?',
+    content: () => <></>,
   },
   {
-    title: 'Where can you source data from?',
+    title: 'How does it work?',
     content: () => (
       <>
         Gatsby’s rich data plugin ecosystem lets you build sites with the data
@@ -28,7 +22,7 @@ const FAQS = [
     ),
   },
   {
-    title: 'How do I scale Gatsby sites?',
+    title: 'Who are your Tech Experts?',
     content: () => (
       <>
         Gatsby.js is Internet Scale. Forget complicated deploys with databases
@@ -39,7 +33,7 @@ const FAQS = [
     ),
   },
   {
-    title: 'How does do I future-proof my website?',
+    title: 'How do you match Partners and Tech Experts?',
     content: () => (
       <>
         Do not build a website with last decade’s tech. The future of the web is
@@ -51,16 +45,12 @@ const FAQS = [
     ),
   },
   {
-    title: 'What exactly does Gatsby build?',
-    content: () => (
-      <>
-        Gatsby.js is a static PWA (Progressive Web App) generator. You get code
-        and data splitting out-of-the-box. Gatsby loads only the critical HTML,
-        CSS, data, and JavaScript so your site loads as fast as possible. Once
-        loaded, Gatsby prefetches resources for other pages so clicking around
-        the site feels incredibly fast.
-      </>
-    ),
+    title: 'How fast do I get a Tech Expert?',
+    content: () => <></>,
+  },
+  {
+    title: 'If I have questions, how do I reach you?',
+    content: () => <></>,
   },
 ];
 

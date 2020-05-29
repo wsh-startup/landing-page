@@ -6,21 +6,17 @@ import Img from 'gatsby-image';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import GithubIcon from '@static/icons/github.svg';
-import InstagramIcon from '@static/icons/instagram.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
 import FacebookIcon from '@static/icons/facebook.svg';
 
 const SOCIAL = [
-  // {
-  //   icon: GithubIcon,
-  //   link: 'https://github.com/ajayns/gatsby-absurd',
-  // },
   {
+    alt: 'Follow us on Facebook',
     icon: FacebookIcon,
     link: 'https://facebook.com/wesoarhighapp',
   },
   {
+    alt: 'Follow us on Twitter',
     icon: TwitterIcon,
     link: 'https://twitter.com/wesoarhighapp',
   },
@@ -53,7 +49,13 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>WeSoarHigh</h2>
+              <h2>
+                <img
+                  alt="WeSoarHigh"
+                  src="logo/WSHblacktext.png"
+                  style={{ height: 50 }}
+                />
+              </h2>
               <small>
                 <span>
                   Illustrations by
@@ -62,7 +64,7 @@ const Footer = () => (
                     @diana_valeanu
                   </ExternalLink>
                 </span>
-                <br />
+                {` | `}
                 <span>
                   Icons made by{' '}
                   <a
@@ -70,19 +72,14 @@ const Footer = () => (
                     title="Freepik"
                   >
                     Freepik
-                  </a>{' '}
-                  from{' '}
-                  <a href="https://www.flaticon.com/" title="Flaticon">
-                    {' '}
-                    www.flaticon.com
                   </a>
                 </span>
               </small>
             </Copyright>
             <SocialIcons>
-              {SOCIAL.map(({ icon, link }) => (
+              {SOCIAL.map(({ alt, icon, link }) => (
                 <ExternalLink key={link} href={link}>
-                  <img src={icon} alt="link" />
+                  <img src={icon} alt={alt} />
                 </ExternalLink>
               ))}
             </SocialIcons>
