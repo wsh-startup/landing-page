@@ -81,7 +81,7 @@ const Footer = () => (
               <p style={{ marginBottom: 10 }}>
                 <StyledExternalLink href="privacy-policy">
                   Privacy Policy
-                </StyledExternalLink>{' '}
+                </StyledExternalLink>
                 {/* |{' '}
                 <StyledExternalLink href="#wesoarhigh">
                   Terms of Service
