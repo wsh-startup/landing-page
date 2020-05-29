@@ -8,6 +8,8 @@ import ExternalLink from '@common/ExternalLink';
 
 import TwitterIcon from '@static/icons/twitter.svg';
 import FacebookIcon from '@static/icons/facebook.svg';
+import MessengerIcon from '@static/icons/messenger.svg';
+import EmailIcon from '@static/icons/email.svg';
 
 const SOCIAL = [
   {
@@ -19,6 +21,17 @@ const SOCIAL = [
     alt: 'Follow us on Twitter',
     icon: TwitterIcon,
     link: 'https://twitter.com/wesoarhighapp',
+  },
+  {
+    alt: 'Message us on Messenger',
+    icon: MessengerIcon,
+    link: 'https://m.me/wesoarhighapp',
+  },
+
+  {
+    alt: 'Drop us an email',
+    icon: EmailIcon,
+    link: 'mailto:hello@wesoarhigh.com',
   },
 ];
 
@@ -64,7 +77,13 @@ const Footer = () => (
             </Copyright>
             <span>
               <p style={{ marginBottom: 10 }}>
-                Privacy Policy | Terms of Service
+                <StyledExternalLink href="https://bit.ly/wesoarhighpartner">
+                  Privacy Policy
+                </StyledExternalLink>{' '}
+                |{' '}
+                <StyledExternalLink href="https://bit.ly/wesoarhighpartner">
+                  Terms of Service
+                </StyledExternalLink>
               </p>
               <span>
                 Illustrations by
@@ -140,6 +159,14 @@ const StyledContainer = styled(Container)`
   @media (max-width: ${props => props.theme.screen.sm}) {
     flex-direction: column;
     text-align: center;
+  }
+`;
+
+const StyledExternalLink = styled(ExternalLink)`
+  color: inherit;
+  text-decoration: underline;
+  &:hover {
+    color: ${props => props.theme.color.primaryDark};
   }
 `;
 

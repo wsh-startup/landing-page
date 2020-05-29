@@ -5,37 +5,62 @@ import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 
+/**
+C/C++
+Flutter
+Dart
+Android
+Objective-C
+Swift
+Node
+Firebase
+*/
+
 const TEAM = [
   {
-    name: 'Web Application',
-    image: 'josh.jpg',
-    role: 'Co-Founder',
+    name: 'HTML',
+    image: 'html.svg',
   },
   {
-    name: 'Mobile Application',
-    image: 'lisa.jpg',
-    role: 'Co-Founder',
+    name: 'CSS',
+    image: 'css.svg',
   },
   {
-    name: 'Desktop Application',
-    image: 'ashlyn.jpg',
-    role: 'Frontend Engineer',
+    name: 'JavaScript',
+    image: 'javascript.svg',
   },
-  // {
-  //   name: 'Todd Joseph',
-  //   image: 'todd.jpg',
-  //   role: 'Designer',
-  // },
-  // {
-  //   name: 'Martin White',
-  //   image: 'martin.jpg',
-  //   role: 'Backend Engineer',
-  // },
-  // {
-  //   name: 'Rose Leslie',
-  //   image: 'rose.jpg',
-  //   role: 'Marketing',
-  // },
+  {
+    name: 'PHP',
+    image: 'php.svg',
+  },
+  {
+    name: 'SQL',
+    image: 'sql.svg',
+  },
+  {
+    name: 'Java',
+    image: 'java.svg',
+  },
+  {
+    name: 'C#',
+    image: 'c-sharp.svg',
+  },
+  {
+    name: 'Angular',
+    image: 'angular.svg',
+  },
+  {
+    name: 'React',
+    image: 'javascript.svg',
+  },
+  {
+    name: 'React Native',
+    image: 'react-native.svg',
+  },
+  {
+    name: 'JavaScript',
+    image: 'javascript.svg',
+  },
 ];
 
 const Team = () => (
@@ -69,9 +94,9 @@ const Team = () => (
     render={data => (
       <Section id="technologies" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h1>The Team</h1>
+          <h1>Skills and Technologies</h1>
           <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
+            {TEAM.map(({ name, image }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
@@ -80,7 +105,7 @@ const Team = () => (
                 <div key={name}>
                   <Img fluid={img.childImageSharp.fluid} alt={name} />
                   <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
+                  {/* <Subtitle>{role}</Subtitle> */}
                 </div>
               );
             })}
@@ -153,9 +178,9 @@ const Title = styled.p`
   color: ${props => props.theme.color.black.regular};
 `;
 
-const Subtitle = styled.p`
-  ${props => props.theme.font_size.small};
-  color: ${props => props.theme.color.black.light};
-`;
+// const Subtitle = styled.p`
+//   ${props => props.theme.font_size.small};
+//   color: ${props => props.theme.color.black.light};
+// `;
 
 export default Team;

@@ -74,7 +74,7 @@ const About = () => (
                 <br />
                 <br />
                 Click{' '}
-                <StyledExternalLink href="bit.ly/wesoarhighpartner">
+                <StyledExternalLink href="https://bit.ly/wesoarhighpartner">
                   here
                 </StyledExternalLink>{' '}
                 to send a request.
