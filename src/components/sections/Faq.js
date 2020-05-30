@@ -121,7 +121,7 @@ const FAQS = [
     content: () => <>We'll get back to you within 24 hours.</>,
   },
   {
-    title: "What happens when you don't find a match?",
+    title: "What happens if you don't find a match?",
     content: () => (
       <>
         Transparency is how we build rapport with our partners. If we don't find

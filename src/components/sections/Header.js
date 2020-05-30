@@ -27,8 +27,7 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                We connect visionaries with skilled Tech Experts that understand
-                value
+                We connect you with skilled Tech Experts that understand value
               </h1>
               <br />
               <p>
