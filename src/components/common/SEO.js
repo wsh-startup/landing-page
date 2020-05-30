@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 const SEO_DATA = {
   description:
-    'We connect people with app ideas to Tech Experts that will build them. Have an app in mind? Join now!.',
+    'We connect people with app ideas to Tech Experts that will build them. Have an app in mind? Join now!',
   title: 'WeSoarHigh',
   url: 'https://wesoarhigh.com',
   author: 'WeSoarHigh Team',
