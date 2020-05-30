@@ -79,11 +79,13 @@ const Footer = () => (
             </Copyright>
             <span>
               <p style={{ marginBottom: 10 }}>
-                <StyledExternalLink href="">Privacy Policy</StyledExternalLink>{' '}
-                |{' '}
+                <StyledExternalLink href="privacy-policy">
+                  Privacy Policy
+                </StyledExternalLink>
+                {/* |{' '}
                 <StyledExternalLink href="#wesoarhigh">
                   Terms of Service
-                </StyledExternalLink>
+                </StyledExternalLink> */}
               </p>
               <span>
                 Illustrations by
@@ -162,7 +164,7 @@ const StyledContainer = styled(Container)`
   }
 `;
 
-const StyledExternalLink = styled(ExternalLink)`
+const StyledExternalLink = styled.a`
   color: inherit;
   text-decoration: underline;
   &:hover {

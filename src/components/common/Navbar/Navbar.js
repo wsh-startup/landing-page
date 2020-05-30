@@ -65,30 +65,35 @@ class Navbar extends Component {
 
   render() {
     const { mobileMenuOpen } = this.state;
+    const { hide } = this.props;
 
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <img
-            alt="WeSoarHigh"
-            src="logo/WSHlogoblackside.png"
-            style={{ height: 50 }}
-          />
+          <a href="/">
+            <img
+              alt="WeSoarHigh"
+              src="logo/WSHlogoblackside.png"
+              style={{ height: 50 }}
+            />
+          </a>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon />
             </button>
           </Mobile>
 
-          <Mobile hide>{this.getNavList({})}</Mobile>
+          {hide || <Mobile hide>{this.getNavList({})}</Mobile>}
         </StyledContainer>
-        <Mobile>
-          {mobileMenuOpen && (
-            <MobileMenu>
-              <Container>{this.getNavList({ mobile: true })}</Container>
-            </MobileMenu>
-          )}
-        </Mobile>
+        {hide || (
+          <Mobile>
+            {mobileMenuOpen && (
+              <MobileMenu>
+                <Container>{this.getNavList({ mobile: true })}</Container>
+              </MobileMenu>
+            )}
+          </Mobile>
+        )}
       </Nav>
     );
   }
