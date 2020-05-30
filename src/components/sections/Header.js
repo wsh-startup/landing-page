@@ -31,7 +31,7 @@ const Header = () => (
               </h1>
               <br />
               <p>
-                Have a project or app in mind?
+                Have a product or app in mind?
                 <br />
                 Our network of <strong>Tech Experts</strong> can help turn your
                 ideas to reality so you can focus on what matters
