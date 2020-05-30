@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
 
   ul li {
     font-family: ${props => props.theme.font.secondary};
-    font-size: 24px;
+    font-size: 20px;
   }
 
   h1, h2, h3, p {

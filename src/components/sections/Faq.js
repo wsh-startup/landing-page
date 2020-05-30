@@ -10,9 +10,18 @@ const FAQS = [
     title: 'What is WeSoarHigh?',
     content: () => (
       <>
-        WeSoarHigh is a young Filipino startup that connects people with product
-        or app ideas (partners) with curated, skilled developers / freelancers
-        (Tech Experts).
+        More people and businesses are going digital because of the pandemic and{' '}
+        <strong>
+          they would need access to Tech resources for them to succeed in the
+          Tech space
+        </strong>
+        .
+        <br />
+        <br />
+        <strong>WeSoarHigh</strong> connects{' '}
+        <u>people with product or app ideas</u> to{' '}
+        <u>skilled developers or freelancers (Tech Experts)</u> who will design
+        and develop the product.
         <br />
         <br />
         We believe everyone who has the courage to pursue the ideas deserve the
@@ -29,45 +38,64 @@ const FAQS = [
       <>
         We want you to build your product as soon and as fast as possible. So
         here's our seamless process for <strong>Partners</strong>.
-        <br />
-        <br />
-        1️⃣ <strong>Send a request</strong> and provide project details
-        <br />
-        2️⃣ <strong>WeSoarHigh recommends 3 of our Tech Experts</strong> that
-        best fit your needs, give insights and recommendations
-        <br />
-        3️⃣ Evaluate and select 1 Tech Expert you like best.{' '}
-        <strong>You have the final say!</strong>
-        <br />
-        4️⃣ <strong>
-          Virtual Session with Tech Expert + WeSoarHigh team
-        </strong>{' '}
-        to iron out details, set milestones, specify payment terms, outline
-        features, etc.
-        <br />
-        5️⃣ <span style={{ color: 'darkred' }}>*</span>Provide incremental
-        payments (₱)
-        <br />
-        6️⃣ <span style={{ color: 'darkred' }}>*</span>Receive incremental
-        releases (weekly or bi-monthly), weekly progress updates and conduct
-        weekly meetings
-        <br />
-        7️⃣ <span style={{ color: 'darkred' }}>*</span>Receive the FINAL PRODUCT
-        📱💻 + Training + Support
-        <br />
-        <em>
-          <small>
-            <span style={{ color: 'darkred' }}>*</span>Will be sorted out and
-            finalized on or before Step 4️⃣
-          </small>
-        </em>
-        <br />
-        <br />
-        For more info, here's our{' '}
+        <ol>
+          <li>
+            <strong>Send a request</strong> through this site and provide
+            project details
+          </li>
+
+          <li>
+            <strong>WeSoarHigh recommends 3 of our Tech Experts</strong> that
+            best fit your needs, and gives insights and recommendations
+            <ul style={{ fontSize: '16px' }}>
+              <li>
+                Evaluate and select the Tech Expert you like best.{' '}
+                <strong>You have the final say!</strong>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>
+              Have virtual sessions with Tech Expert + WeSoarHigh team
+            </strong>{' '}
+            to iron out details, set milestones, specify payment terms, outline
+            features, etc.
+          </li>
+          <li>
+            Fullfill <strong>Product Milestones and Payment</strong>
+            <ul>
+              <li>
+                <span style={{ color: 'darkred' }}>*</span>Provide incremental
+                payments (₱)
+              </li>
+              <li>
+                <span style={{ color: 'darkred' }}>*</span>Receive incremental
+                releases (weekly or bi-monthly), weekly progress updates and
+                conduct weekly meetings
+              </li>
+              <li>
+                <span style={{ color: 'darkred' }}>*</span>Receive the{' '}
+                <strong>final product 📱💻 + Training + Support</strong>
+              </li>
+              <li>
+                We will discuss the payment terms and milestones in detail once
+                we have analyzed the product requirements.
+              </li>
+              <em>
+                <small>
+                  <span style={{ color: 'darkred' }}>*</span>Will be sorted out
+                  and finalized on or before Step 4️
+                </small>
+              </em>
+            </ul>
+          </li>
+        </ol>
+        {/* For more info, here's our{' '}
         <StyledExternalLink href="https://bit.ly/wshpartnerfaq">
           FAQ for Interested Partners
         </StyledExternalLink>
-        . .
+        . */}
       </>
     ),
   },
@@ -118,7 +146,15 @@ const FAQS = [
   },
   {
     title: 'How fast do I get a Tech Expert?',
-    content: () => <>We'll get back to you within 24 hours.</>,
+    content: () => (
+      <>
+        After submitting the form, we'll get back to you within 24 hours.
+        <br />
+        <br />
+        Depending on the project requirements, we can match Tech Experts within
+        3 to 7 days.
+      </>
+    ),
   },
   {
     title: "What happens if you don't find a match?",
@@ -130,21 +166,24 @@ const FAQS = [
         <br />
         <br />
         Depending on our agreement, we can look for a developer to match your
-        needs. Or, partners will have the option to wait until a Tech Expert
-        becomes available.
+        needs. Alternatively, partners will have the option to wait until a Tech
+        Expert becomes available.
       </>
     ),
   },
   {
-    title: "I'm a developer, how do I become a Tech Partner?",
+    title: "I'm a developer, how do I join your team and become a Tech Expert?",
     content: () => (
       <>
-        We're launching our Tech Partner page soon. For now, the Tech Partners
-        are within our professional network.
+        To join our team of Tech Experts, apply{' '}
+        <StyledExternalLink href="https://bit.ly/joinwesoarhigh">
+          here
+        </StyledExternalLink>
+        .
         <br />
         <br />
-        But since you persisted this far, contact us in any of the links below.
-        We love proactive, passionate, and determined developers!
+        Thanks for your interest. We love proactive, passionate, and determined
+        developers!
       </>
     ),
   },
@@ -161,25 +200,25 @@ const FAQS = [
         Other Channels:
         <ul>
           <li>
-            Email:{' '}
+            📧 Email:{' '}
             <StyledExternalLink href="mailto:hello@wesoarhigh.com">
               hello@wesoarhigh.com
             </StyledExternalLink>
           </li>
           <li>
-            Twitter:{' '}
+            🐦 Twitter:{' '}
             <StyledExternalLink href="https://twitter.com/wesoarhighph">
               @wesoarhighph
             </StyledExternalLink>
           </li>
           <li>
-            Facebook:{' '}
+            👍🏼 Facebook:{' '}
             <StyledExternalLink href="https://facebook.com/wesoarhighph">
               @WeSoarHighPH
             </StyledExternalLink>
           </li>
           <li>
-            Messenger:{' '}
+            💬 Messenger:{' '}
             <StyledExternalLink href="https://m.me/wesoarhighph">
               Talk to us!
             </StyledExternalLink>
