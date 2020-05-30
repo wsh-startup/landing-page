@@ -27,14 +27,14 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                We connect you with skilled Tech Experts that understand value
+                We connect you with skilled Tech Experts who can build your idea
               </h1>
               <br />
               <p>
                 Have a project or app in mind? <strong>Talk to us!</strong>
                 <br />
-                <strong>WeSoarHigh</strong> helps turn your ideas to reality by
-                focusing on what matters
+                Our network of <strong>Tech Experts</strong> can help turn your
+                ideas to reality by focusing on what matters
               </p>
               <br />
               <br />

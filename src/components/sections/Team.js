@@ -43,23 +43,11 @@ const TEAM = [
     image: 'icons/angular.png',
   },
   {
-    name: 'Swift/Objective-C',
-    image: 'icons/swift.svg',
-  },
-  {
     name: 'Android',
     image: 'icons/android.svg',
   },
   {
-    name: 'Flutter/Dart',
-    image: 'icons/dart.png',
-  },
-  {
-    name: 'React/React Native',
-    image: 'icons/react.svg',
-  },
-  {
-    name: 'C/C++',
+    name: 'C / C++',
     image: 'icons/c.svg',
   },
   {
@@ -69,6 +57,18 @@ const TEAM = [
   {
     name: 'SQL',
     image: 'icons/sql.svg',
+  },
+  {
+    name: 'React/React Native',
+    image: 'icons/react.svg',
+  },
+  {
+    name: 'Flutter / Dart',
+    image: 'icons/dart.png',
+  },
+  {
+    name: 'Swift / Objective-C',
+    image: 'icons/swift.svg',
   },
 ];
 
@@ -104,15 +104,18 @@ const Team = () => (
       <Section id="technologies" accent="secondary">
         <Container style={{ position: 'relative' }}>
           <h1>Skills and Technologies</h1>
+          <p>These are the technologies used by our Tech Experts</p>
+          <p>Have something that is not on the list? Tell us about it.</p>
           <TeamGrid>
             {TEAM.map(({ name, image }) => {
               return (
-                <div key={name}>
+                <div key={name} style={{ display: 'inline', width: 120 }}>
                   <img
                     src={image}
                     alt={name}
-                    style={{ width: 75, height: 75 }}
+                    style={{ width: 50, height: 50 }}
                   />
+                  <br />
                   <Title>{name}</Title>
                   {/* <Subtitle>{role}</Subtitle> */}
                 </div>
@@ -133,9 +136,9 @@ const Team = () => (
 
 const TeamGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, 100px);
   grid-template-rows: min-content;
-  grid-gap: 35px;
+  grid-gap: 15px;
   justify-content: space-between;
   width: 60%;
   margin-top: 72px;
@@ -184,7 +187,9 @@ const ArtMobile = styled.figure`
 
 const Title = styled.p`
   margin-top: 16px;
-  color: ${props => props.theme.color.black.regular};
+  display: inline;
+  color: ${props => props.theme.color.black.light};
+  font-size: 22px;
 `;
 
 // const Subtitle = styled.p`
