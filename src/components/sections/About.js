@@ -124,9 +124,9 @@ const About = () => (
                 <strong>
                   Iron out the details of the product and reach a common
                   understanding.
-                </strong>{' '}
-                At this stage, we specify the product features, schedule,
-                milestones, delivery, and payment terms.
+                </strong>
+                {/* At this stage, we specify the product features, schedule,
+                milestones, delivery, and payment terms. */}
               </p>
             </div>
             <Art>
