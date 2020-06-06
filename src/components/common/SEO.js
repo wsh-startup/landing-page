@@ -2,14 +2,22 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'Reaching greather heights together',
+  description:
+    'We connect people with app ideas to Tech Experts that will build them. Have an app in mind? Join now!',
   title: 'WeSoarHigh',
-  url: '',
+  url: 'https://wesoarhigh.com',
   author: 'WeSoarHigh Team',
-  keywords: ['wesoarhigh', 'mentorship', 'startup', 'mentor ph'],
-  img: '',
-  twitterId: '@wesoarhighapp',
-  facebookId: '',
+  keywords: [
+    'wesoarhigh',
+    'freelance',
+    'startup',
+    'developers',
+    'tech marketplace',
+    'build app',
+  ],
+  img: 'https://wesoarhigh.com/images/seo-cover.png',
+  twitterId: '@wesoarhighph',
+  facebookId: '242756503817223',
 };
 
 const SEO = () => {

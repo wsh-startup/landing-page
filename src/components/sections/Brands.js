@@ -36,15 +36,18 @@ const UsedBy = () => (
       }
     `}
     render={data => (
-      <Section id="our-partners" accent>
+      <Section id="our-clients" accent>
         <StyledContainer>
           <div>
             <h1>Our Clients</h1>
             <LogoGrid>
               {LOGOS.map(({ brand, logo, link }) => (
-                <ExternalLink key={link} href={link}>
-                  <img src={logo} alt={brand} style={{ height: 150 }} />
-                </ExternalLink>
+                <div>
+                  <ExternalLink key={link} href={link}>
+                    <img src={logo} alt={brand} style={{ height: 150 }} />
+                  </ExternalLink>
+                  <p style={{ textAlign: 'center' }}>{brand}</p>
+                </div>
               ))}
             </LogoGrid>
           </div>

@@ -80,7 +80,7 @@ const FAQS = [
         <ol>
           <li>
             <strong>Send a request</strong> through this site and provide
-            project details
+            details of your app idea
           </li>
 
           <li>
@@ -190,8 +190,8 @@ const FAQS = [
         After submitting the form, we'll get back to you within 2 days.
         <br />
         <br />
-        Depending on the project requirements, we can match Tech Experts within
-        3 to 7 days.
+        Depending on the requirements, we can match Tech Experts within 3 to 7
+        days.
       </>
     ),
   },

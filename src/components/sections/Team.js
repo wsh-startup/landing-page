@@ -109,7 +109,7 @@ const Team = () => (
           <TeamGrid>
             {TEAM.map(({ name, image }) => {
               return (
-                <div key={name} style={{ display: 'inline', width: 120 }}>
+                <div key={name} style={{ textAlign: 'center' }}>
                   <img
                     src={image}
                     alt={name}
@@ -138,7 +138,7 @@ const TeamGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 100px);
   grid-template-rows: min-content;
-  grid-gap: 15px;
+  grid-gap: 20px;
   justify-content: space-between;
   width: 60%;
   margin-top: 72px;
