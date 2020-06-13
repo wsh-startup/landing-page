@@ -70,7 +70,7 @@ const About = () => (
                 <strong>Provide details on your product or app idea.</strong>
                 <br />
                 At this stage, we gather relevant information that will help us
-                match you to Tech Experts.
+                match you to Freelance Developers.
                 <br />
                 <br />
                 Click{' '}
@@ -92,7 +92,7 @@ const About = () => (
               <h2>
                 <span style={{ color: '#4834d4' }}>
                   Step 2:{' '}
-                  <strong>Choose a Tech Expert from at most 3 matches</strong>
+                  <strong>Choose a Freelance Developer from at most 3 matches</strong>
                 </span>
               </h2>
               <p>
@@ -103,7 +103,7 @@ const About = () => (
                 . But, YOU have the final say!
                 <br />
                 <br />
-                WeSoarHigh matches the best Tech Experts that fit your goals,
+                WeSoarHigh matches the best Freelance Developer that fit your goals,
                 requirements, and profile. We'll help you make an informed
                 choice and guide you through the process.
               </p>
@@ -113,11 +113,11 @@ const About = () => (
             <div>
               <h2>
                 <span style={{ color: '#4834d4' }}>
-                  Step 3: <strong>Meet the Tech Expert</strong>
+                  Step 3: <strong>Meet the Freelance Developer</strong>
                 </span>
               </h2>
               <p>
-                Have a virtual session with the Tech Expert of your choice,
+                Have a virtual session with the Freelance Developer of your choice,
                 facilitated by the WeSoarHigh team.
                 <br />
                 <br />
@@ -192,8 +192,8 @@ const Grid = styled.div`
     }
 
     ${props =>
-      props.inverse &&
-      `
+    props.inverse &&
+    `
         ${Art} {
           order: 2;
         }

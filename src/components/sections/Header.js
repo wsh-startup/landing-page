@@ -27,13 +27,13 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                We connect you with skilled Tech Experts who can build your idea
+                We connect you with skilled Freelance Developers who can build your idea
               </h1>
               <br />
               <p>
                 Have a product or app in mind?
                 <br />
-                Our network of <strong>Tech Experts</strong> can help turn your
+                Our network of <strong>Freelance Developers</strong> can help turn your
                 ideas to reality so you can focus on what matters
               </p>
               <br />
@@ -45,7 +45,7 @@ const Header = () => (
                 rel="noreferrer"
               >
                 <Button>
-                  I'm looking for a Tech Expert to build my idea{' '}
+                  I'm looking for a Freelance Developer to build my idea{' '}
                   <span role="img" aria-label="idea">
                     💡
                   </span>

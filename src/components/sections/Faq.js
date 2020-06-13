@@ -45,11 +45,11 @@ const FAQS = [
           </li>
 
           <li>
-            <strong>WeSoarHigh recommends 3 of our Tech Experts</strong> that
+            <strong>WeSoarHigh recommends 3 of our Freelance Developers</strong> that
             best fit your needs, and gives insights and recommendations
             <ul style={{ fontSize: '16px' }}>
               <li>
-                Evaluate and select the Tech Expert you like best.{' '}
+                Evaluate and select the Freelance Developers you like best.{' '}
                 <strong>You have the final say!</strong>
               </li>
             </ul>
@@ -57,7 +57,7 @@ const FAQS = [
 
           <li>
             <strong>
-              Have virtual sessions with Tech Expert + WeSoarHigh team
+              Have virtual sessions with Freelance Developers + WeSoarHigh team
             </strong>{' '}
             to iron out details, set milestones, specify payment terms, outline
             features, etc.
@@ -76,7 +76,7 @@ const FAQS = [
               </li>
               <li>
                 <span style={{ color: 'darkred' }}>*</span>Receive the{' '}
-                <strong>final product 📱💻 + Training + Support</strong>
+                <strong>final product <span role="img" aria-labelledby="phone">📱</span><span role="img" aria-labelledby="laptop">💻</span> + Training + Support</strong>
               </li>
               <li>
                 We will discuss the payment terms and milestones in detail once
@@ -100,7 +100,7 @@ const FAQS = [
     ),
   },
   {
-    title: 'Who are your Tech Experts?',
+    title: 'Who are your Freelande Developers (Tech Experts)?',
     content: () => (
       <>
         Our Tech Experts possess the following qualities:
@@ -125,11 +125,11 @@ const FAQS = [
     ),
   },
   {
-    title: 'How do you match Partners and Tech Experts?',
+    title: 'How do you match Partners and Freelance Developers?',
     content: () => (
       <>
         We developed an algorithm that evaluates the compatibility of our
-        Partners with each of our Tech Expert.
+        Partners with each of our Freelance Developers.
         <ol>
           <li>Assess the business and Tech requirements of our partners</li>
           <li>
@@ -145,13 +145,13 @@ const FAQS = [
     ),
   },
   {
-    title: 'How fast do I get a Tech Expert?',
+    title: 'How fast do I get a Freelance Developer?',
     content: () => (
       <>
         After submitting the form, we'll get back to you within 24 hours.
         <br />
         <br />
-        Depending on the requirements, we can match Tech Experts within 3 to 7
+        Depending on the requirements, we can match Freelance Developer within 3 to 7
         days.
       </>
     ),
@@ -172,7 +172,7 @@ const FAQS = [
     ),
   },
   {
-    title: "I'm a developer, how do I join your team and become a Tech Expert?",
+    title: "I'm a developer, how do I join your team and become a Freelance Developer (Tech Expert)?",
     content: () => (
       <>
         To join our team of Tech Experts, apply{' '}
@@ -200,25 +200,25 @@ const FAQS = [
         Other Channels:
         <ul>
           <li>
-            📧 Email:{' '}
+          <span role="img" aria-labelledby="mail">📧</span> Email:{' '}
             <StyledExternalLink href="mailto:hello@wesoarhigh.com">
               hello@wesoarhigh.com
             </StyledExternalLink>
           </li>
           <li>
-            🐦 Twitter:{' '}
+          <span role="img" aria-labelledby="tweet">🐦</span> Twitter:{' '}
             <StyledExternalLink href="https://twitter.com/wesoarhighph">
               @wesoarhighph
             </StyledExternalLink>
           </li>
           <li>
-            👍🏼 Facebook:{' '}
+          <span role="img" aria-labelledby="like">👍🏼</span> Facebook:{' '}
             <StyledExternalLink href="https://facebook.com/wesoarhighph">
               @WeSoarHighPH
             </StyledExternalLink>
           </li>
           <li>
-            💬 Messenger:{' '}
+            <span role="img" aria-labelledby="quote">💬</span> Messenger:{' '}
             <StyledExternalLink href="https://m.me/wesoarhighph">
               Talk to us!
             </StyledExternalLink>

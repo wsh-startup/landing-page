@@ -7,69 +7,69 @@ import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
-    name: 'HTML 5',
-    image: 'icons/html5.svg',
+    name: 'Mobile Apps',
+    image: 'icons/mobile.png',
   },
   {
-    name: 'CSS 3',
-    image: 'icons/css.svg',
+    name: 'Websites',
+    image: 'icons/web.png',
   },
   {
-    name: 'JavaScript',
-    image: 'icons/javascript.svg',
+    name: 'Desktop Application',
+    image: 'icons/desktop.png',
   },
   {
-    name: 'NodeJS',
-    image: 'icons/nodejs.svg',
+    name: 'Custom Systems',
+    image: 'icons/custom.png',
   },
-  {
-    name: 'PHP',
-    image: 'icons/php.svg',
-  },
-  {
-    name: 'Laravel',
-    image: 'icons/laravel.png',
-  },
-  {
-    name: 'Java',
-    image: 'icons/java.svg',
-  },
-  {
-    name: 'C#',
-    image: 'icons/c-sharp.svg',
-  },
-  {
-    name: 'Angular',
-    image: 'icons/angular.png',
-  },
-  {
-    name: 'Android',
-    image: 'icons/android.svg',
-  },
-  {
-    name: 'C / C++',
-    image: 'icons/c.svg',
-  },
-  {
-    name: 'Firebase',
-    image: 'icons/firebase.png',
-  },
-  {
-    name: 'SQL',
-    image: 'icons/sql.svg',
-  },
-  {
-    name: 'React/React Native',
-    image: 'icons/react.svg',
-  },
-  {
-    name: 'Flutter / Dart',
-    image: 'icons/dart.png',
-  },
-  {
-    name: 'Swift / Objective-C',
-    image: 'icons/swift.svg',
-  },
+  // {
+  //   name: 'PHP',
+  //   image: 'icons/php.svg',
+  // },
+  // {
+  //   name: 'Laravel',
+  //   image: 'icons/laravel.png',
+  // },
+  // {
+  //   name: 'Java',
+  //   image: 'icons/java.svg',
+  // },
+  // {
+  //   name: 'C#',
+  //   image: 'icons/c-sharp.svg',
+  // },
+  // {
+  //   name: 'Angular',
+  //   image: 'icons/angular.png',
+  // },
+  // {
+  //   name: 'Android',
+  //   image: 'icons/android.svg',
+  // },
+  // {
+  //   name: 'C / C++',
+  //   image: 'icons/c.svg',
+  // },
+  // {
+  //   name: 'Firebase',
+  //   image: 'icons/firebase.png',
+  // },
+  // {
+  //   name: 'SQL',
+  //   image: 'icons/sql.svg',
+  // },
+  // {
+  //   name: 'React/React Native',
+  //   image: 'icons/react.svg',
+  // },
+  // {
+  //   name: 'Flutter / Dart',
+  //   image: 'icons/dart.png',
+  // },
+  // {
+  //   name: 'Swift / Objective-C',
+  //   image: 'icons/swift.svg',
+  // },
 ];
 
 const Team = () => (
@@ -101,10 +101,10 @@ const Team = () => (
       }
     `}
     render={data => (
-      <Section id="technologies" accent="secondary">
+      <Section id="expert-services" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h1>Skills and Technologies</h1>
-          <p>These are the technologies used by our Tech Experts</p>
+          <h1>Expert Services</h1>
+          <p>These are the expert services offered by our Freelance Developers</p>
           <p>Have something that is not on the list? Tell us about it.</p>
           <TeamGrid>
             {TEAM.map(({ name, image }) => {
@@ -113,7 +113,7 @@ const Team = () => (
                   <img
                     src={image}
                     alt={name}
-                    style={{ width: 50, height: 50 }}
+                    style={{ width: 100, height: 100 }}
                   />
                   <br />
                   <Title>{name}</Title>
@@ -122,6 +122,17 @@ const Team = () => (
               );
             })}
           </TeamGrid>
+          <a
+            href="https://bit.ly/wesoarhighpartner"
+            target="_blank"
+            style={{ color: '#111111', textDecoration: 'none', width: '50%' }}
+            rel="noreferrer"
+          >
+            <Button>
+              I want one of these{' '}
+              <span role="img" aria-label="idea">💡</span>
+            </Button>
+          </a>
           <Art>
             <Img fluid={data.art_team.childImageSharp.fluid} />
           </Art>
@@ -133,6 +144,22 @@ const Team = () => (
     )}
   />
 );
+
+const Button = styled.div`
+  background-color: ${props => props.theme.color.tertiary};
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-top: 50px;
+  width: 40%;
+  text-align: center;
+
+  :hover {
+    background-color: ${props => props.theme.color.tertiaryDark};
+    color: #eeeeee;
+  }
+`;
 
 const TeamGrid = styled.div`
   display: grid;
