@@ -50,13 +50,36 @@ const UsedBy = () => (
                 </div>
               ))}
             </LogoGrid> */}
-            <ul style={{ marginTop: 50 }}>
-              <li><strong style={{ fontSize: 32 }}>We speak startup <span role="img" aria-labelledby="rocket">🚀</span></strong></li>
-              <ul style={{ marginTop: 15, marginBottom: 30 }}><li>We help you prioritize what needs to be built first to achieve your goals and get customer validation. And, we make it lean.</li></ul>
-              <li><strong style={{ fontSize: 32 }}>We eliminate the noise <span role="img" aria-labelledby="noise">🔇</span></strong></li>
-              <ul style={{ marginTop: 15, marginBottom: 30 }}><li>Instead of choosing from countless applicants yourself, <strong>we narrow them down for you.</strong> We select at most 3 developers that fit your needs. From there, <strong>you have the power to choose.</strong></li></ul>
-              <li><strong style={{ fontSize: 32 }}>We mentor developers <span role="img" aria-labelledby="tweet">👩🏻‍🏫</span><span role="img" aria-labelledby="tweet">👨🏽‍🏫</span></strong></li>
-              <ul style={{ marginTop: 15, marginBottom: 30 }}><li>Although the developers are freelancers and not in-house, we support and advise them, so they are aligned with our vision and mission.</li></ul>
+            <ul style={{ marginTop: 50, listStyle: 'none' }}>
+              <li>
+                <strong style={{ fontSize: 32 }}>We speak startup <span role="img" aria-labelledby="rocket">🚀</span></strong>
+              </li>
+              <ul style={{ marginTop: 15, marginBottom: 30, listStyle: 'none' }}>
+                <li>
+                  <p><u>Prioritize.</u>{' '}We help you prioritize what needs to be built first to achieve your goals and get customer validation. And, we make it lean.
+                  </p>
+                </li>
+              </ul>
+              <li>
+                <strong style={{ fontSize: 32 }}>We eliminate the noise <span role="img" aria-labelledby="noise">🤫</span></strong>
+              </li>
+              <ul style={{ marginTop: 15, marginBottom: 30, listStyle: 'none' }}>
+                <li>
+                  <p>
+                    <u>Focus on what matters.</u> Instead of choosing from countless applicants yourself, <strong>we narrow them down for you.</strong> We select freelancers that fit your needs.
+                    </p>
+                </li>
+              </ul>
+              <li>
+                <strong style={{ fontSize: 32 }}>We mentor developers <span role="img" aria-labelledby="tweet">👩🏻‍🏫</span><span role="img" aria-labelledby="tweet">👨🏽‍🏫</span></strong>
+              </li>
+              <ul style={{ marginTop: 15, marginBottom: 30, listStyle: 'none' }}>
+                <li>
+                  <p>
+                    <u>Quality and alignment.</u> We support and advise freelancers so they are aligned with the mission, vision, core values, and OKR's of WeSoarHigh.
+                </p>
+                </li>
+              </ul>
             </ul>
           </div>
           <Art>

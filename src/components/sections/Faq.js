@@ -20,7 +20,7 @@ const FAQS = [
         <br />
         <strong>WeSoarHigh</strong> connects{' '}
         <u>people with product or app ideas</u> to{' '}
-        <u>skilled developers or freelancers (Tech Experts)</u> who will design
+        <u>skilled freelance developers</u> who will design
         and develop the product.
         <br />
         <br />
@@ -33,10 +33,13 @@ const FAQS = [
     ),
   },
   {
-    title: 'What makes WeSoarHigh different?',
+    title: 'What WeSoarHigh\'s mission?',
     content: () => (
       <>
-        <p>Our mission is to:</p>
+        <strong>Our mission is to manifest ideas</strong> — by connecting visionaries with the right Technical resources and helping them compete in the digital space.
+        <br/>
+        <br/>
+        <p>We want to:</p>
         <ul>
           <li>
             help individuals and startups jumpstart their businesses by building
@@ -45,27 +48,6 @@ const FAQS = [
           <li>
             provide to freelance developers and designers the opportunity to
             gain more Technical, analytical experience
-          </li>
-        </ul>
-        <br />
-        <p>What makes WeSoarHigh unique is:</p>
-        <ul>
-          <li>
-            <strong>We speak startup</strong>. We help you prioritize what needs
-            to be built first to achieve your goals and get customer validation.
-            And, we make it <em>lean</em>.
-          </li>
-          <li>
-            <strong>We eliminate the noise</strong>. Instead of choosing from
-            countless applicants yourself,{' '}
-            <strong>we narrow them down for you.</strong> We select at most 3
-            developers that fit your needs. From there,{' '}
-            <strong>you have the power to choose.</strong>
-          </li>
-          <li>
-            <strong>We mentor developers.</strong> Although the developers are
-            freelancers and not in-house, we support and advise them, helping
-            them align with our vision and mission.
           </li>
         </ul>
       </>
@@ -139,10 +121,15 @@ const FAQS = [
     ),
   },
   {
-    title: 'Who are your Freelande Developers (Tech Experts)?',
+    title: 'Who are your Freelance Developers?',
     content: () => (
       <>
-        Our Tech Experts possess the following qualities:
+        We carefully screened freelancer developers that apply on the platform. 
+        <br/>
+        <strong>Our acceptance rate is 21%.</strong>
+        <br/>
+        <br/>
+        Our freelance developers possess the following qualities:
         <ul>
           <li>
             Competent in Mobile Application, Web Application, and/or Desktop
@@ -211,10 +198,10 @@ const FAQS = [
     ),
   },
   {
-    title: "I'm a developer, how do I join your team and become a Freelance Developer (Tech Expert)?",
+    title: "I'm a developer, how do I join your team and become a Freelance Developer?",
     content: () => (
       <>
-        To join our team of Tech Experts, apply{' '}
+        To join our team of freelance developers, apply{' '}
         <StyledExternalLink href="https://bit.ly/joinwesoarhigh">
           here
         </StyledExternalLink>

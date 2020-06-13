@@ -105,7 +105,7 @@ const Team = () => (
         <Container style={{ position: 'relative' }}>
           <h1>Expert Services</h1>
           <p>These are the expert services offered by our Freelance Developers</p>
-          <p>Have something that is not on the list? Tell us about it.</p>
+          <p>Need something that is not on the list? Tell us about it.</p>
           <TeamGrid>
             {TEAM.map(({ name, image }) => {
               return (
@@ -129,7 +129,7 @@ const Team = () => (
             rel="noreferrer"
           >
             <Button>
-              I want one of these{' '}
+              I need one of these{' '}
               <span role="img" aria-label="idea">💡</span>
             </Button>
           </a>

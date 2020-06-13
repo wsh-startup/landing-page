@@ -27,14 +27,14 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                We connect you with skilled Freelance Developers who can build your idea
+                Save on cost. Hire a Freelance Developer.
               </h1>
               <br />
               <p>
-                Have a product or app in mind?
+                <h3>Have a product or app in mind?</h3>
+
                 <br />
-                Our network of <strong>Freelance Developers</strong> can help turn your
-                ideas to reality so you can focus on what matters
+                We connect you with skilled <strong>Freelance Developers</strong> who can build your product so you can focus on what matters.
               </p>
               <br />
               <br />
