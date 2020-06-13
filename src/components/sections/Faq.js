@@ -33,6 +33,45 @@ const FAQS = [
     ),
   },
   {
+    title: 'What makes WeSoarHigh different?',
+    content: () => (
+      <>
+        <p>Our mission is to:</p>
+        <ul>
+          <li>
+            help individuals and startups jumpstart their businesses by building
+            their app idea
+          </li>
+          <li>
+            provide to freelance developers and designers the opportunity to
+            gain more Technical, analytical experience
+          </li>
+        </ul>
+        <br />
+        <p>What makes WeSoarHigh unique is:</p>
+        <ul>
+          <li>
+            <strong>We speak startup</strong>. We help you prioritize what needs
+            to be built first to achieve your goals and get customer validation.
+            And, we make it <em>lean</em>.
+          </li>
+          <li>
+            <strong>We eliminate the noise</strong>. Instead of choosing from
+            countless applicants yourself,{' '}
+            <strong>we narrow them down for you.</strong> We select at most 3
+            developers that fit your needs. From there,{' '}
+            <strong>you have the power to choose.</strong>
+          </li>
+          <li>
+            <strong>We mentor developers.</strong> Although the developers are
+            freelancers and not in-house, we support and advise them, helping
+            them align with our vision and mission.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
     title: 'How does it work?',
     content: () => (
       <>
@@ -148,7 +187,7 @@ const FAQS = [
     title: 'How fast do I get a Freelance Developer?',
     content: () => (
       <>
-        After submitting the form, we'll get back to you within 24 hours.
+        After submitting the form, we'll get back to you within 2 days.
         <br />
         <br />
         Depending on the requirements, we can match Freelance Developer within 3 to 7
