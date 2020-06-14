@@ -66,7 +66,7 @@ const Footer = () => (
             <Copyright>
               <img
                 alt="WeSoarHigh"
-                src="logo/WSHblacktext.png"
+                src="/logo/WSHblacktext.png"
                 style={{ height: 50 }}
               />
               <SocialIcons>

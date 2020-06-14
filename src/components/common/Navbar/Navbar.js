@@ -73,7 +73,7 @@ class Navbar extends Component {
           <a href="/">
             <img
               alt="WeSoarHigh"
-              src="logo/WSHlogoblackside.png"
+              src="/logo/WSHlogoblackside.png"
               style={{ height: 50 }}
             />
           </a>
