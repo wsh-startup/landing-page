@@ -38,7 +38,7 @@ const UsedBy = () => (
     render={data => (
       <Section id="why-we're-different" accent>
         <StyledContainer>
-          <div style={{ width: '50%', marginLeft: '50%' }}>
+          <Content>
             <h1>Why We're Different</h1>
             {/* <LogoGrid>
               {LOGOS.map(({ brand, logo, link }) => (
@@ -81,7 +81,7 @@ const UsedBy = () => (
                 </li>
               </ul>
             </ul>
-          </div>
+          </Content>
           <Art>
             <Img fluid={data.art_story.childImageSharp.fluid} />
           </Art>
@@ -90,6 +90,16 @@ const UsedBy = () => (
     )}
   />
 );
+
+const Content = styled.div`
+  width: 50%;
+  margin-left: 50%;
+
+  @media(max-width: ${props => props.theme.screen.md}) {
+    width: 100%;
+    margin-left: 0;
+  }
+`;
 
 // const LogoGrid = styled.div`
 //   display: grid;

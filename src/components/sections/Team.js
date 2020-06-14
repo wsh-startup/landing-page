@@ -159,6 +159,10 @@ const Button = styled.div`
     background-color: ${props => props.theme.color.tertiaryDark};
     color: #eeeeee;
   }
+
+  @media(max-width: ${props => props.theme.screen.md}) {
+    width: 100%;
+  }
 `;
 
 const TeamGrid = styled.div`
