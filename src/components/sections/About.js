@@ -91,21 +91,19 @@ const About = () => (
             <div>
               <h2>
                 <span style={{ color: '#4834d4' }}>
-                  Step 2:{' '}
-                  <strong>Choose a Freelance Developer from at most 3 matches</strong>
+                  Step 2: <strong>Consultation</strong>
                 </span>
               </h2>
               <p>
                 <strong>
-                  We provide 3 matches to choose from, plus, our recommendations
-                  and insights
+                  Discuss the project to refine, define, and prioritize
+                  specifications.
                 </strong>
-                . But, YOU have the final say!
                 <br />
                 <br />
-                WeSoarHigh matches the best Freelance Developer that fit your goals,
-                requirements, and profile. We'll help you make an informed
-                choice and guide you through the process.
+                WeSoarHigh matches the best Freelance Developer that fit your
+                goals, requirements, and profile. We'll help you make an
+                informed choice and guide you through the process.
               </p>
             </div>
           </Grid>
@@ -117,8 +115,8 @@ const About = () => (
                 </span>
               </h2>
               <p>
-                Have a virtual session with the Freelance Developer of your choice,
-                facilitated by the WeSoarHigh team.
+                Have a virtual session with the Freelance Developer of your
+                choice, facilitated by the WeSoarHigh team.
                 <br />
                 <br />
                 <strong>
@@ -192,8 +190,8 @@ const Grid = styled.div`
     }
 
     ${props =>
-    props.inverse &&
-    `
+      props.inverse &&
+      `
         ${Art} {
           order: 2;
         }
