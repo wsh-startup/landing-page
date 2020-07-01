@@ -12,17 +12,23 @@ import TwitterIcon from '@static/icons/twitter.svg';
 import FacebookIcon from '@static/icons/facebook.svg';
 import MessengerIcon from '@static/icons/messenger.svg';
 import EmailIcon from '@static/icons/email.svg';
+import InstagramIcon from '@static/icons/instagram.svg';
 
 const SOCIAL = [
   {
-    alt: 'Follow us on Facebook',
+    alt: 'Like us on Facebook',
     icon: FacebookIcon,
-    link: 'https://facebook.com/wesoarhighapp',
+    link: 'https://facebook.com/wesoarhighph',
   },
   {
     alt: 'Follow us on Twitter',
     icon: TwitterIcon,
-    link: 'https://twitter.com/wesoarhighapp',
+    link: 'https://twitter.com/wesoarhighph',
+  },
+  {
+    alt: 'Follow us on Instagram',
+    icon: Instagram,
+    link: 'https://twitter.com/wesoarhighph',
   },
   {
     alt: 'Message us on Messenger',
