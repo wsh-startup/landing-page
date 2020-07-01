@@ -27,8 +27,8 @@ const SOCIAL = [
   },
   {
     alt: 'Follow us on Instagram',
-    icon: Instagram,
-    link: 'https://twitter.com/wesoarhighph',
+    icon: InstagramIcon,
+    link: 'https://instagram.com/wesoarhighph',
   },
   {
     alt: 'Message us on Messenger',
